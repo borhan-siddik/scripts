@@ -6,37 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<title>Scroll to Top</title>
-	<style>
-		body {
-			display: flex;
-			justify-content: center;
-			font-size: 17px;
-			background-color: #eee;
-			padding: 50px;
-		}
-		.container	{
-			max-width: 1080px;
-			background-color: #fff;
-			padding: 50px;
-		}
-
-		#back-to-top {
-			font-size: 30px;
-			position: fixed;
-			bottom: 30px;
-			right: 30px;
-			padding: 10px 20px;
-			background-color: #fff;
-			box-shadow: 0 5px 20px -10px rgba(0,0,0,0.3);
-			cursor: pointer;
-			transition: .2s ease-in-out;
-		}
-
-		#back-to-top:hover {
-			box-shadow: unset;
-			transform: translateY(-10px);
-		}
-	</style>
+	<link rel="stylesheet" href="css/scroll-to-top.css">
 </head>
 <body>
 	<div class="container">
@@ -70,16 +40,6 @@
 	<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
 	</div>
 	<a id="back-to-top">&#8679;</a>
-<script>
-	(function(jQuery){
-		$("document").ready(function() {
-			$("#back-to-top").click(function() {
-				$("html, body").animate({
-					scrollTop: 0
-				}, "slow");
-			});
-		});
-	}($));
-</script>
+	<script src="js/scroll-to-top.js"></script>
 </body>
 </html>
