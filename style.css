@@ -10,6 +10,10 @@ a:hover {
 	color: var(--primary-color);
 }
 
-div.container {
-	width: 80%;
+.container {
+	max-width: 1600px;
+}
+
+table.dataTable thead th:first-child, table.dataTable tfoot th:first-child {
+	min-width: 200px;
 }
