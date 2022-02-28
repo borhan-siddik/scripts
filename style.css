@@ -1,0 +1,15 @@
+:root {
+	--primary-color: #1ebe1e;
+}
+
+a {
+	color: var(--primary-color);
+}
+
+a:hover {
+	color: var(--primary-color);
+}
+
+div.container {
+	width: 80%;
+}
