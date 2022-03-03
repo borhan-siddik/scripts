@@ -1,13 +1,7 @@
+/* Just for decoration */
 body {
-	display: flex;
-	justify-content: center;
 	font-size: 17px;
 	background-color: #eee;
-	padding: 50px;
-}
-.container	{
-	max-width: 1080px;
-	background-color: #fff;
 	padding: 50px;
 }
 
@@ -16,7 +10,7 @@ body {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
-	padding: 10px 20px;
+	padding: 5px 20px;
 	background-color: #fff;
 	box-shadow: 0 5px 20px -10px rgba(0,0,0,0.3);
 	cursor: pointer;
@@ -27,3 +21,4 @@ body {
 	box-shadow: unset;
 	transform: translateY(-10px);
 }
+/* Just for decoration */

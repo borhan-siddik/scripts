@@ -1,4 +1,4 @@
-(function(jQuery){
+(function($){
 	$("document").ready(function() {
 		$("#back-to-top").click(function() {
 			$("html, body").animate({
@@ -6,4 +6,4 @@
 			}, "slow");
 		});
 	});
-}($));
+}(jQuery)); 
