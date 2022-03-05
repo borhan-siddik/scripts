@@ -1,5 +1,6 @@
 (function($){
-	$("document").ready(function() {
+	$(document).ready(function() {
+		/* Requried */
 		$("#privacy-agreement").click(function() {
 			if($("#submit-btn").is(":disabled")) {
 				$("#submit-btn").removeAttr('disabled');
@@ -7,8 +8,8 @@
 				$("#submit-btn").attr('disabled', 'disabled');
 			}
 		});
+		/* Requried */
 
-	// Just for fun
 	$("form").submit(function(e){
 		$("#submit-btn").after("<p class='mt-3 text-success'>Successfully Submitted!</p>");
 		e.preventDefault();
@@ -16,7 +17,6 @@
 			$("#submit-btn").next().remove();
 		}, 3000);
 	});
-	// Just for fun
 
 	});
 }(jQuery)); 
