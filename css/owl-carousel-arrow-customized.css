@@ -1,0 +1,55 @@
+/* Required */
+.owl-carousel .owl-nav button.owl-next {
+	top: calc(50% - 26px); /* Substructing the extra space after main items up to the navigation dots */
+	right: 5px;
+	background: rgba(0, 0, 0, 0.219);
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 10px !important;
+	transform: translateY(-50%);
+	/* Uncomment to make it round */
+	/* 
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	line-height: 20px;
+	border-radius: 100%; 
+	*/
+	/* Uncomment to make it round */
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+	top: calc(50% - 26px); /* Substructing the extra space after main items up to the navigation dots */
+	left: 5px;
+	background: rgba(0, 0, 0, 0.164);
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 10px !important;
+	transform: translateY(-50%);
+	/* Uncomment to make it round */
+	/* 
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	line-height: 20px;
+	border-radius: 100%; 
+	*/
+	/* Uncomment to make it round */
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+	background: rgba(0, 0, 0, 0);
+}
+/* Required */
+
+/* If you want to use boostrap elements */
+.owl-carousel.owl-drag .owl-item .row {
+	margin: unset;
+	background-color: #0bcff1;
+	height: 300px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+	position: absolute;
+}
+/* If you want to use boostrap elements */
