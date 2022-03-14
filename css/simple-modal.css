@@ -1,4 +1,5 @@
-.bs-custom-modal {
+/* Required */
+.bs-modal-container {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -12,17 +13,71 @@
 	display: none;
 }
 
-.animate {
+.bs-modal {
+	--gutter: 3rem;
+	width: 30%;
+	padding: var(--gutter);
+	background-color:floralwhite;
+	position: relative;
+}
+
+.bs-modal-close {
+	position: absolute;
+	right: var(--gutter);
+	top: var(--gutter);
+	font-size: 2rem;
+	font-weight: 600;
+	transform: translate(50%, -50%);
+	cursor: pointer;
+}
+
+.bs-modal-animate {
 	-webkit-animation: animatezoom 1s;
 	animation: animatezoom 1s;
- }
- 
- @-webkit-keyframes animatezoom {
-	from {-webkit-transform: scale(0)} 
-	to {-webkit-transform: scale(1)}
- }
-	
- @keyframes animatezoom {
-	from {transform: scale(0)} 
-	to {transform: scale(1)}
- }
+}
+
+@-webkit-keyframes animatezoom {
+	from {
+		-webkit-transform: scale(0)
+	}
+
+	to {
+		-webkit-transform: scale(1)
+	}
+}
+
+@keyframes animatezoom {
+	from {
+		transform: scale(0)
+	}
+
+	to {
+		transform: scale(1)
+	}
+}
+
+@media (max-width:1199px) {
+	.bs-modal {
+		width: 50%;
+	}
+}
+
+@media (max-width:991px) {
+	.bs-modal {
+		width: 60%;
+	}
+}
+
+@media (max-width:767px) {
+	.bs-modal {
+		width: 70%;
+	}
+}
+
+@media (max-width:575px) {
+	.bs-modal {
+		width: 100%;
+	}
+}
+
+/* Required */
